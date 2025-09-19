@@ -8,3 +8,4 @@
 # Ignore R temporary files
 .Rhistory
 .RData
+.Rproj.user
