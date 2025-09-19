@@ -1,0 +1,10 @@
+# Ignore NetCDF files
+*.nc
+
+# Ignore temporary files
+*.tmp
+*.bak
+
+# Ignore R temporary files
+.Rhistory
+.RData
