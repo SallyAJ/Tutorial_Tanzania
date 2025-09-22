@@ -7,8 +7,7 @@ All data are provided with a **monthly temporal resolution** and a **spatial res
 ## Data Availability
 
 Data is available at: 
-https://imperiallondon-my.sharepoint.com/:f:/g/personal/sjahn_ic_ac_uk/ErEpESMTJzpOieQRmoVaREMBe_QXEFGHwccYSkQ402jzAg?e=eCNEdo
-
+https://drive.google.com/drive/folders/15OHTdY9qsx4TqfRQu6yu4G6Y5BmP9vo6?usp=sharing
 
 ## Getting used to the (new) data format(s)
 
