@@ -132,7 +132,6 @@ plot(region_shape, add = TRUE, border = "red", lwd = 2)
 # Define coordinates
 coords <- data.frame(lon = 36.68, lat = -3.37)
 
-# Stack into a multi-layer object
 ts_arusha <- terra::extract(r_clip, coords)
 values <- as.numeric(ts_arusha[ , -1]) # no ID
 dates <- time(r_clip)
