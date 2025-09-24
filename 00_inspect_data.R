@@ -83,7 +83,7 @@ print(current_crs)
 
 # If CRS exists but is not EPSG:4326, reproject
 if (!is.na(current_crs) && !grepl("WGS84", as.character(current_crs))) {
-  region_raster <- projectRaster(region_raster, crs = CRS("+proj=longlat +datum=WGS84 +no_defs"))
+  region_raster <- terra:project(region_raster, crs = CRS("+proj=longlat +datum=WGS84 +no_defs"))
   message("CRS transformed to EPSG:4326 (WGS84).")
 # If CRS is undefined but CRS confirmed, you can simply assign EPSG:4326
 } else if (is.na(current_crs)) {
@@ -111,7 +111,7 @@ region_shape <- terra::vect(file.path(path, "gadm41_TZA_shp",
 
 # check CRS (always!)
 if (!crs(region_raster, proj=TRUE) == crs(region_shape, proj=TRUE)) {
-  region_shape <- project(region_shape, crs(region_raster))
+  region_shape <- terra::project(region_shape, crs(region_raster))
 }
 
 # add to plot

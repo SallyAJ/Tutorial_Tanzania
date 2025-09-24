@@ -70,6 +70,7 @@ path <- "C:/Users/sjahn/Desktop/Data/Tanzania" # your data path
 library(terra)
 library(dismo)
 library(viridis)
+library(raster)
 
 ################################################################################
 # 1. Get the data. 
@@ -113,10 +114,10 @@ region_shape <- terra::vect(file.path(path, "gadm41_TZA_shp",
                                       gadm41_fil))  
 # check CRS 
 if (!crs(tas_scen_gcm, proj=TRUE) == crs(tas_hist_gcm, proj=TRUE)) {
-  tas_hist_gcm <- project(tas_hist_gcm, crs(tas_scen_gcm))
+  tas_hist_gcm <- terra::project(tas_hist_gcm, crs(tas_scen_gcm))
 }
 if (!crs(tas_hist_gcm, proj=TRUE) == crs(region_shape, proj=TRUE)) {
-  region_shape <- project(region_shape, crs(tas_hist_gcm))
+  region_shape <- terra::project(region_shape, crs(tas_hist_gcm))
 }
 tas_scen_gcm_cropped <- terra::crop(tas_scen_gcm, region_shape)
 tas_scen_gcm_clip  <- terra::mask(tas_scen_gcm_cropped, region_shape, touches = TRUE) 
