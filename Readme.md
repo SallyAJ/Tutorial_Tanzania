@@ -4,7 +4,7 @@ In this tutorial, we will primarily use data extracted from the Climate Data Sto
 Furthermore, we will use bias-corrected and downscaled climate projections from CMIP6 models (based on DBCCA, please refer to Jahn et al. 2025, in preparation).  
 All data are provided with a **monthly temporal resolution** and a **spatial resolution of 0.1°**.
 
-We use country and administrative unit level data from GADM providing maps and spatial data for all countries and their sub-divisionshttps:  https://gadm.org/index.html
+We use country and administrative unit level data from GADM providing maps and spatial data for all countries and their sub-divisions:  https://gadm.org/index.html
 
 ## Data Availability
 
