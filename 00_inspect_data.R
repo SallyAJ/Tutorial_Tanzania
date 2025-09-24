@@ -8,6 +8,10 @@
 # All data are provided with a monthly temporal resolution and 
 # a spatial resolution of 0.1°.
 
+# We use country and administrative unit level data from GADM providing maps and 
+# spatial data for all countries and their sub-divisions: https: //gadm.org/index.html
+
+
 # Data is available at: 
 # https://drive.google.com/drive/folders/15OHTdY9qsx4TqfRQu6yu4G6Y5BmP9vo6?usp=sharing
 
@@ -46,7 +50,7 @@
 
 ################################################################################
 
-path <- "Z:/Tanzania" # your data path
+path <- "C:/Users/sjahn/Desktop/Data/Tanzania" # your data path
 
 # At first, please install and load libraries.
 library(terra)
@@ -298,7 +302,7 @@ for (s in seasons) {
        xlab = "Year", ylab = "Temp (°C)", main = s)
 }
 
-# par(mfrow = c(1,1), mar = c(5, 4, 4, 2) + 0.1)
+par(mfrow = c(1,1), mar = c(5, 4, 4, 2) + 0.1)
 
 ################################################################################
 # 4. Own Exercise: 
